@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello">
+    <meta name="keywords" content="跨域, Hello">
     <meta name="description" content="选择有时候比努力更重要">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello</title>
+    <title>跨域 | Hello</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">跨域</h1>
                 </div>
             </div>
         </div>
@@ -458,7 +458,37 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>为什么会出现跨域呢？<br>2013 年以前前后端不分离，没有 web 前端开发工程师一说，都是前端只需要写简单的 html 和 css 静态页面，把写好的文件发送给后端，页面都是由服务器渲染的，同一个服务器即有前端又有后端代码，就不存在跨域这么个技术。后来发现异步无刷新操作很好的，就出现了 ajax 技术。还是要把前端和后端都部署到同一个 web 服务器上：同源策略（同一个端口、同一个域名、同一个协议），但是开发出现了问题，前端开发工程师需要看 java 代码，为了开发方便，就把前后端开发分开来，就出现了一个方案，前端装一个 xampp（构造一个服务访问），这时就出现了跨域问题，例如后端在<a target="_blank" rel="noopener" href="http://a.qq.com/getData%E5%8F%AF%E4%BB%A5%E6%8B%BF%E5%88%B0%E6%95%B0%E6%8D%AE%EF%BC%8C%E4%BD%86%E6%98%AF%E5%89%8D%E7%AB%AF%E5%9C%A8%E6%9C%AC%E6%9C%BA%E4%B8%8A%E9%9D%A2%E5%B0%B1%E6%98%AF%E8%AE%BF%E9%97%AEhttp://127.0.0.1:1234/index.html,%E8%99%BD%E7%84%B6%E5%8D%8F%E8%AE%AE%E6%98%AF%E4%B8%80%E6%A0%B7%E7%9A%84%EF%BC%8C%E4%BD%86%E6%98%AF%E5%9F%9F%E5%90%8D%E4%B8%8D%E4%B8%80%E6%A0%B7%EF%BC%8C%E7%AB%AF%E5%8F%A3%E4%B8%8D%E4%B8%80%E6%A0%B7%EF%BC%8C%E6%8B%BF%E4%B8%8D%E5%88%B0%E5%90%8E%E7%AB%AF%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%8C%E4%BA%8E%E6%98%AF%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E4%BF%AE%E6%94%B9%E6%9C%AC%E5%9C%B0%E7%9A%84host%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8A%8Ahttp://127.0.0.1:1234/index.html%E5%AE%9A%E4%BD%8D%E5%88%B0http://a.qq.com/getData%EF%BC%8C%E7%9B%B8%E5%BD%93%E4%BA%8E%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E5%9C%B0%E5%9D%80%E6%97%B6%EF%BC%8C%E4%B9%9F%E8%AE%BF%E9%97%AE%E4%BA%86%E5%90%8E%E7%AB%AF%E5%9C%B0%E5%9D%80%EF%BC%8C%E6%A8%A1%E6%8B%9F%E5%87%BA%E4%B8%80%E4%B8%AA%E5%90%8C%E6%BA%90%E6%95%88%E6%9E%9C%EF%BC%8C%E4%BD%86%E8%BF%98%E4%B8%8D%E6%98%AF%E8%B7%A8%E5%9F%9F%E7%AD%96%E7%95%A5%E3%80%82">http://a.qq.com/getData可以拿到数据，但是前端在本机上面就是访问http://127.0.0.1:1234/index.html,虽然协议是一样的，但是域名不一样，端口不一样，拿不到后端的数据，于是可以通过修改本地的host文件，把http://127.0.0.1:1234/index.html定位到http://a.qq.com/getData，相当于访问本地地址时，也访问了后端地址，模拟出一个同源效果，但还不是跨域策略。</a><br>为了整个项目的性能优化，就把服务器拆分：<br>web 服务器：静态资源 kbs.sport.qq.com<br>data 服务器：业务逻辑和数据分析 api.s.qq.com<br>图片服务器：由于处理工程大<br>但是域名不一样，就出现了跨域策略</p>
+<pre><code>- 协议
+- 域名
+- 端口号</code></pre>
+<ul>
+<li>以上三个都一样就是同源，只要有一个不一样，就是跨域策略<br>例如（跨域）：</li>
+<li>WEB 服务器地址：http：//127.0.0.1:3000/index.html</li>
+<li>数据接口地址：<a target="_blank" rel="noopener" href="http://127.0.0.1:4000/list">http://127.0.0.1:4000/list</a></li>
+</ul>
+<p>*<strong>*******</strong>*****<strong>*******</strong>***<strong>*******</strong>*****<strong>*******</strong>*********<br>解决方案：<br>一、JSONP（只能处理 get 请求）<br>利用不存在跨域的标签，携带（？callback=func）全局函数访问服务器，结果返回”func(“+JSON.stringify(data)+”)”,客户端会识别成 js 执行，结果就执行了但数据的函数。<br>例如：</p>
+<script src="http://www.b.c：4000/list?callback=func"></script>
+
+<pre><code>$.ajax(&#123;
+    url:&quot;http://127.0.0.1:8001/list&quot;,
+    method:&#39;get&#39;,
+    dataType:&#39;jsonp&#39;//执行的是JSOP的请求
+    success：res=&gt;&#123;
+        console.log(res);
+    &#125;
+&#125;)</code></pre>
+<p>二、CORS 跨域资源共享（只能写一个源或者写*表示都可以，但是不安全也不允许携带 cookie）</p>
+<p>-客户端（发送 ajax/fetch 请求）</p>
+<p>-服务器设置相关的头信息（需要处理 option 试探性请求）</p>
+<p>三、http proxy =&gt;webpack webpack -dev -server</p>
+<p>四、nginx 反向代理=》不需要前端处理</p>
+<p>五、postMessage</p>
+<p>六、WebSocket 协议跨域:scoket.io(实时通信，需要客户端和服务器都设置布置)</p>
+<p>七、location.hash+iframe</p>
+<p>八、document.domin+iframe</p>
+<p>九、window.name+iframe</p>
+
             </div>
             <hr/>
 
@@ -695,15 +725,15 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="跨域">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">跨域</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            为什么会出现跨域呢？2013 年以前前后端不分离，没有 web 前端开发工程师一说，都是前端只需要写简单的 html 和 css 静态页面，把写好的文件发送给后端，页面都是由服务器渲染的，同一个服务器即有前端又有后端代码，就不存在跨域这么个
                         
                     </div>
                     <div class="publish-info">
