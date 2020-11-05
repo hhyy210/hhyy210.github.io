@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="SpringBoot框架学习笔记, Hello">
+    <meta name="keywords" content="gitee+SmartGit, Hello">
     <meta name="description" content="选择有时候比努力更重要">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>SpringBoot框架学习笔记 | Hello</title>
+    <title>gitee+SmartGit | Hello</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">SpringBoot框架学习笔记</h1>
+                    <h1 class="description center-align post-title">gitee+SmartGit</h1>
                 </div>
             </div>
         </div>
@@ -442,7 +442,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-19
+                    2020-11-05
                 </div>
                 
 
@@ -458,126 +458,22 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>必学框架：springcloud、springboot、redis缓存、rabbitMq、zookeeper<br>一、简介<br>Spring Boot 框架Spring简化应用开发，之前的j2EE要结合mybatise+springMVC+spring，到一对jar包，配置一堆的文件，配置环境，SpringBoot把<br>spring的技术整合使用，spring data数据访问、spring framework框架、spring cloud分布式、spring security安全权限限制等等一大堆，通过整合spring的<br>整个系列技术站来简化企业级开发，自动配置spring的环境。<br>j2EE开发的一站式解决方案</p>
-<p>二、微服务<br>    架构风格，一种小型服务，可以通过http方式进行互通：<br>    单体应用（所有代码都在一个里面）<br>    微服务：每个功能元素独立出来，每一个功能元素都是一个可独立替换和独立升级的软件单元</p>
-<p>app= springcloud + springboot +    spring data</p>
-<p>三、idea软件学习<br>    IntellJ IDEA:跟Eclipse相比：<br>        1、强大的整合功能，比如git、Mean、Spring。2、提示功能快速，边界<br>        3、提示功能广（数据库查询语句） 4、好用的快捷键和代码模板   5、精准查找<br>    1、安装：<a target="_blank" rel="noopener" href="https://www.jetbrains.com/idea">https://www.jetbrains.com/idea</a><br>    可以实时保存，project=》模块<br>    2、模板（setting-Editor-Live Templates/Postfix Completion）:psvm：main      sout：输出   带参数：soutp（形参）、soutv（变量就近）  fori、itar（for循环） ifer（增强for循环） list.for(循环输出list） list.forr(逆序）/list.fori（正序） ifn（是否为空）<br>    3、安装tomcat：<a target="_blank" rel="noopener" href="https://blog.csdn.net/gyshun/article/details/80920227">https://blog.csdn.net/gyshun/article/details/80920227</a><br>    4、部署tomcat：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/zwer/p/10462117.html">https://www.cnblogs.com/zwer/p/10462117.html</a><br>    5、关联数据库<br>    6、版本控制：版本控制(Revision control)是一种软件工程技巧,籍以在开发的过程中,确保由不同人所编辑的同一档案都得到更新。 版本控制透过文档控制(documentation control)记录程序各个模组的改动,并为每次改动编上序号<br>    git客户端</p>
-<pre><code>7、idea中使用github：https://www.cnblogs.com/javabg/p/7987755.html
-8、Intellij IDEA项目怎么下载clone中github代码：https://jingyan.baidu.com/article/4e5b3e19e95e1f91901e24bb.html
-9、add=》commit=》push
-10、版本控制：https://blog.csdn.net/Ke_Jie/article/details/100055560         右击文件local history=》show history 可以查看该文件的修改情况
- 11、调试 （查看已有变量的值）
-12、mean：https://blog.csdn.net/liudi439316248/article/details/48969881
-    apache提供的一款自动化构建工具，用于自动化构建和依赖管理，发展历史：make=》Ant=》Meven=》Gradle
-    构建过程：清理=》编译=》测试=》报告=》打包=》部署
-    idea部署：cmd中输入mvn -v测试
-13、springboot
-        1、创建一个mean工程
-        2、导入依赖spring boot 相关的依赖
-             &lt;!--&lt;parent&gt;
-                    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-                    &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
-                    &lt;version&gt;1.5.9.RELEASE&lt;/version&gt;
-                 &lt;/parent&gt;
-                 &lt;dependencies&gt;
-                    &lt;dependency&gt;
-                            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-                            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
-                    &lt;/dependency&gt;
-                 &lt;/dependencies&gt;
-            --&gt;
-        3、编写主程序
-        4、编写Controller、Service,不需要写配置（包扫描器，视图解析器，前端控制器等配置），也不需要安装tomacat，不用打jar包放到tomcat上运行，
-        5、部署：
-            （1）导入：&lt;build&gt;      //这个插件，可以将应用打包成一个可执行的jar包，无需在目标服务器安装tomcat，等等
-                        &lt;plugins&gt;
-                                &lt;plugin&gt;
-                                    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-                                    &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
-                                &lt;/plugin&gt;
-                        &lt;/plugins&gt;
-                         &lt;/build&gt;--&gt;
-                 （2）将这个应用打成jar包（在右边mean project中lifecycle中package，直接使用java-jar的命令进行）</code></pre>
-<p>13、pom.xml  里面帮我们导入了很多jar包（在External Libraries文件下面）<br>    1）<artifactId>spring-boot-starter-parent</artifactId>//Spring Boot的版本仲裁中心，以后我们导入依赖默认是不需要写版本（没有在里面管理的就需要写版本）<br>    2）<artifactId>spring-boot-starter-web</artifactId>//spring-boot场景启动器，帮我们导入了web模块正常运行所依赖的组件</p>
-<pre><code>Spring Boot将所有的功能都抽取出来，做成一个个的Starters（启动器），只需要在项目里面引入这些starter相关场景的所有依赖都会导入进来，要用什么功能都导入什么场景的启动器。</code></pre>
-<p>14、//@SpringBootApplication 来标注一个主程序类，说明这是一个Spring Boot应用</p>
-<pre><code>@SpringBootApplication
-public class Helloword &#123;
-        public static void main(String[] args)&#123;
-            //Spring应用启动起来
-            SpringApplication.run(Helloword.class,args);
-        &#125;
-&#125;
-@SpringBootApplication 来标注在哪一个类上，就表明这是一个配置类（也是一个组件）
-
-里面的@AutoConfigurationPackage：自动配置包
-    将主配置类（@SpringBootApplication标注的类）的所有包及下面所有组件扫描到Spring容器；15、快速创建项目（里面可以选择功能模块，连网（可以在maven project里面刷新））</code></pre>
-<p>16、@RestController //===@ResponseBody+@Controller</p>
-<p>17、resources结构<br>    static：保存所有的静态资源：js、css、images<br>    templates：保存所有的模板页面；（Spring Boot默认jar包使用嵌入式的Tomcat，默认不支持JSP页面），可以使用模板引擎（freemarker、thymeleaf）<br>    application.properties：spring boot应用的配置文件，可以修改一些默认文件</p>
-<p>18、配置文件（写法不一样）<br>    application.properties(server.port= 8088)<br>    application.yml（属性和值大小写敏感）<br>    配置文件的作用：修改SpringBoot自动配置的默认值；SpringBoot在底层都给我们自动配置好<br>    yml（YAML）是一个标记语言，以数据为中心，比json、xml等更适合做配置文件<br>    标记语言：<br>        以前的配置文件:大多数使用的是XXX.xml文件<br>    yml：<br>     server:<br>      （空格）port:(空格)8088    //以空格控制层级关系和隔阂键值</p>
-<pre><code>XML：
-    &lt;server&gt;
-        &lt;port&gt;8081&lt;/port&gt;
-    &lt;/server&gt;
-
-值的写法：
-    字符串不用引号，用双引号表示不会转译，单引号表示会转译。
-    行内写法：friend：&#123;lastName：zhangh，age：18&#125;
-    数组：
-        pets：
-            - cat
-            - dog
-
-    行内写法：pets：[cat,dog]</code></pre>
-<p>19、//Alt+Insert键：自动生成代码<br>20、将配置文件中配置的每一个属性的值，映射到组件中，导入依赖：</p>
-<pre><code>&lt;!--导入配置文件处理器、配置文件进行绑定就会有提示--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-boot-configuration-processor&lt;/artifactId&gt;
-        &lt;optional&gt;true&lt;/optional&gt;
-    &lt;/dependency&gt;
-
-    &lt;!--测试导入--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
-        &lt;scope&gt;test&lt;/scope&gt;
-    &lt;/dependency&gt;</code></pre>
-<p>20、@value和ConfigurationProperties,配置文件值注入：配置文件yml还是properties他们都能获取到值<br>    松散绑定：person.firstName==person.first-name==person.first_name==PERSON_FIRST_NAME</p>
-<pre><code>                    ConfigurationProperties       @value                        
-功能                批量注入配置文件中的属性      一个个指定
-    松散绑定            支持                          不支持
-SpEL（表达式）      不支持                        支持
-    JSR303数据校验      支持                          不支持
-复杂类型封装        支持                           不支持
-
-如果只是在某个业务逻辑中需要获取一下配置文件中的某项值，使用@value，在控制器中只需要获取一下值就行
-如果bean中用来映射值时，用ConfigurationProperties（默认从全局配置文件中）</code></pre>
-<p>21、1）@PropertySource（value={“classpath：person.properties”}）<br>    读取指定的文件，可以指定ConfigurationProperties读取的文件，加载指定的配置文件，并绑定到person变量中<br>    2）@ImportResource：导入Spring的配置文件，让配置文件里面的内容生效<br>            加入自己设置的配置文件beans.xml，在主运行程序上面设置ImportReourse（location={“classpath：beans.xml”}）<br>    3）@Configuration<br>    SpringBoot推荐全注解<br>    加@Configuration，指明当前类是一个配置类，就是来替代之前的Spring配置文件<br>        <bean></bean>   ====@Bean<br>                    public HelloService helloService(){}    将方法的返回值添加到容器中；容器这个组件默认的id是方法名<br>22、占位符：<br>    1）随机数：${random.int}<br>    2）获取之前匹配的值：name: ${person.lastName}小狗<br>    3）没有则可以设置默认值（加冒号）：lastName: zhangsan${app.name:123}</p>
-<p>23、Profile：对不同环境提供不同配置功能的支持，可以通过激活、指定参数等方法切换环境<br>    我们在配置文件编写的时候，文件名可以是application-{profile}.properties/yml<br>    1)默认使用application.properties<br>       例如：application.dev.properties    在application.properties设置spring.profiles.active=dev即可启动</p>
-<pre><code>2)在yml中可以分档设置：
-    server:
-      port:8088
-    spring:
-      profiles:
-        active: dev   //激活配置模块
-    ---
-    server:
-      port:8087
-
-    spring:
-      profiles: dev
-    ---
-    server:
-        port:8086
-
-    spring:
-      profiles: prod
-3)也可以用命令行  或者  Program arguments后面填写激活模块</code></pre>
-<p>24、配置文件加载位置(优先级从高到低，高的会覆盖低的，互补配置，可以通过spring.config.location来改变默认配置(适合打包后添加配置文件）：<br>        1）项目打包后，点击左下方Termina输入用命令设置：cd target<br>        2）再输入：java -jar spring-boot-01-0.0.1-SNAPSHOT.jar（打包后的项目名）–spring.config.location=配置文件的路径<br>     ）<br>    - file:/config/                项目名下面下新建config文件下面<br>    - file:./                       项目名下面<br>    - classpath:/config/            main/resources下新建config文件下面<br>    - classpath:/                    main/resources下面</p>
-<p>25、#配置项目的访问路径<br>    server.servlet.context-path=/boot02</p>
-<p>26、自动配置原理<br>    1）SpringBoot启动的时候加载主配置类，开启了自动配置功能@EnableAutoConfiguration<br>    2）@EnableAutoConfiguration的作用：利用AutoConfigurationImportSelector给容器中导入一些组件，其中AutoConfigurationImportSelector方法</p>
-<p>IT界有三大定律：摩尔定律、反摩尔定律、安迪-比尔定律<br>问题：<br>1、解决连接不上github问题: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/mmit/p/12587287.html">https://www.cnblogs.com/mmit/p/12587287.html</a><br>2、解决连接github报错Can’t get input stream from URL，<a target="_blank" rel="noopener" href="https://www.icode9.com/content-1-700653.html">https://www.icode9.com/content-1-700653.html</a></p>
+                <p>如何导入外部Git仓库到中国源代码托台: <a target="_blank" rel="noopener" href="https://www.oschina.net/question/82993_133520">https://www.oschina.net/question/82993_133520</a><br>下载SmartGit: <a target="_blank" rel="noopener" href="https://www.syntevo.com/smartgit/download/">https://www.syntevo.com/smartgit/download/</a></p>
+<p>1.注册码云账号：<a target="_blank" rel="noopener" href="https://gitee.com/">https://gitee.com</a><br>2.新建仓库</p>
+<p>3.Fork操作：从别人开放的远程仓库复制到自己的远程仓库<br>4.SmartGit是图形化的Git和Mercurial客户端，它也可以连接到SVN存储库。SmartGit可在Linux，MacOS和Windows（7或更高版本）上运行。Git和Mercurial（Hg）是分布式版本控制系统（DVCS）。：<a target="_blank" rel="noopener" href="http://www.syntevo.com/doc/display/SG/Manual">http://www.syntevo.com/doc/display/SG/Manual</a><br>5.Ssh密钥的理解</p>
+<p>一、SSH是什么<br>简单的说，SSH是一种网络协议，主要用于客户端与远程主机的安全链接和交互。<br>密钥对：在非对称加密技术中，有两种密钥，分为私钥和公钥，私钥是密钥对所有者持有，不可公布，公钥是密钥对持有者公布给他人的。<br>公钥：公钥用来给数据加密，用公钥加密的数据只能使用私钥解密<br>私钥：如上，用来解密公钥加密的数据。</p>
+<p>二、常见用法<br>1.客户端与远程主机的安全链接<br>命令如：$ ssh -p 2222 user@host<br>解释如下：<br>-p 2222 ：指定端口号2222<br>user ：登陆用户名<br>host ；远程主机地址</p>
+<p>1）安全链接的过程是：<br>1.远程主机端收到客户端的登陆请求时先发送自己的公钥给客户端<br>2.客户端用拿到的公钥加密用户名和密码，然后发送给远程主机<br>3.远程主机用自己的密钥解密收到的用户名和密码，然后校验用户名和密码是否正确，如果正确则登陆成功。</p>
+<p>2）客户端免密登陆远程主机<br>如果只是通过第一步，以后的每次登陆都需要输入登陆密码，非常麻烦。幸运的是SSH提供了公钥登陆（免密登陆）</p>
+<p>公钥登录的流程如下：<br>1.客户端在自己本地生成一对公钥密钥文件，然后将公钥存储在远程主机上<br>2.客户端登陆时，远程主机会随机生成一串字符串发送给客户端<br>3.客户端用自己的密钥将收到的字符串加密，并返回给远程主机<br>4.远程主机利用公钥解密收到的加密字符串，如果解密成功并且与发送的一致则直接免密登陆。</p>
+<p>三、设置密钥<br>1、首先我得重新在git设置一下身份的名字和邮箱   进入到需要提交的文件夹底下（因为直接打开git Bash，在没有路径的情况下，根本没！法！改！刚使用git时遇到的坑。。。）<br>git config –global user.name “yourname”<br>git config –global user.email “<a href="mailto:&#121;&#x6f;&#x75;&#x72;&#x40;&#101;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#121;&#x6f;&#x75;&#x72;&#x40;&#101;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a>“<br>注：yourname是你要设置的名字，your@email是你要设置的邮箱。</p>
+<p>2、删除.ssh文件夹（直接搜索该文件夹）下的known_hosts(手动删除即可，不需要git）</p>
+<p>3、git输入命令<br>$ ssh-keygen -t rsa -C “<a href="mailto:&#121;&#x6f;&#117;&#114;&#64;&#x65;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#109;">&#121;&#x6f;&#117;&#114;&#64;&#x65;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#109;</a>“（请填你设置的邮箱地址）<br>接着出现：<br>Generating public/private rsa key pair.<br>Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):<br>请直接按下回车</p>
+<p>【#Enter passphrase (empty for no passphrase):<br>重点： 这里提示输入密码 我本来以为是输入自己的git账号的密码， 但是发现 括号写着（空 无口令）于是搜了一下这里的相关资料 这里的意思是 使用ssh连接 这里创建一个你的连接的密码，如果为空 则默认使用私钥进行连接<br>然后系统会自动在C:\Users\Administrator.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，用记事本打开id_rsa.pub，将全部的内容复制】</p>
+<p>4、打开<a target="_blank" rel="noopener" href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a><br>进入ssh设置</p>
+<p>在key中将刚刚复制的粘贴进去</p>
+<p>点击add ssh key，</p>
+<p>SmartGit使用方法：<a target="_blank" rel="noopener" href="https://blog.csdn.net/double_sweet1/article/details/80188212">https://blog.csdn.net/double_sweet1/article/details/80188212</a></p>
 
             </div>
             <hr/>
@@ -603,7 +499,7 @@ SpEL（表达式）      不支持                        支持
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://huangying.cool/2020/10/19/SpringBoot%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">http://huangying.cool/2020/10/19/SpringBoot%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a>
+                    <a href="http://huangying.cool/2020/11/05/gitee+SmartGit%E9%85%8D%E7%BD%AE/">http://huangying.cool/2020/11/05/gitee+SmartGit%E9%85%8D%E7%BD%AE/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -806,9 +702,10 @@ SpEL（表达式）      不支持                        支持
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/11/05/gitee+SmartGit%E9%85%8D%E7%BD%AE/">
                     <div class="card-image">
@@ -826,9 +723,9 @@ SpEL（表达式）      不支持                        支持
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -837,6 +734,7 @@ SpEL（表达式）      不支持                        支持
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -847,21 +745,19 @@ SpEL（表达式）      不支持                        支持
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/19/%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/">
+                <a href="/2020/10/19/SpringBoot%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="面试笔记">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="SpringBoot框架学习笔记">
                         
-                        <span class="card-title">面试笔记</span>
+                        <span class="card-title">SpringBoot框架学习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一、了解公司的行业，业务是做什么方面的，状况二、对岗位的要求，针对岗位要求查找相关面试题三、准备一分钟自我介绍四、准备自己的职业规划
-实战篇一、了解公司的行业，业务是做什么方面的，状况
-诚毅软件专注智慧运营与大数据融合，聚焦用户体验，致力于
+                            必学框架：springcloud、springboot、redis缓存、rabbitMq、zookeeper一、简介Spring Boot 框架Spring简化应用开发，之前的j2EE要结合mybatise+springMVC+spring
                         
                     </div>
                     <div class="publish-info">
